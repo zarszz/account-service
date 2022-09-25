@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e1af29d5-b57c-40d4-a8bf-e7b57d3a4fd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AccountServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/keystore/keystore.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/AccountServiceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/constant/BranchedPassword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/AuthController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/ItemsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/PayrollController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/RoleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/SecurityEventController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/exception/ControllerExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/exception/ErrorResponse$ValidationError.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/controller/exception/ErrorResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/dto/request/ChangePasswordRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/dto/request/ChangeUserAccessRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/dto/request/ChangeUserRoleDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/dto/request/EmployeePaymentsDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/dto/request/SignupRequestDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/dto/response/EmployeePaymentResponseDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/dto/response/ResponseSecurityEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/dto/response/SignupResponseDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/model/EmployeePayment.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/model/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/model/SecurityEvent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/repository/EmployeePaymentRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/repository/RoleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/repository/SecurityEventRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/repository/UserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/security/AuthenticationEvents.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/security/MethodSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/security/RestAuthenticationEntryPoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/security/UserDetailsImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/security/UserDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/security/WebSecurityConfigurerImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/security/constant/SecurityEventEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/security/constant/UserSecurityLogging.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/services/SecurityEventService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/account/services/UserServices.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/keystore/keystore.p12" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/AccountServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/TestReq.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/keystore/keystore.p12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/AccountServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/AccountServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/constant/BranchedPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/constant/BranchedPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/controller/ItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/ItemsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/controller/PayrollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/PayrollController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/controller/SecurityEventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/SecurityEventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/TestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/controller/exception/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/exception/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/controller/exception/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/exception/ErrorResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/dto/request/ChangePasswordRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangePasswordRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/dto/request/ChangeUserAccessRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangeUserAccessRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/dto/request/ChangeUserRoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangeUserRoleDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/dto/request/EmployeePaymentsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/EmployeePaymentsDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/dto/request/SignupRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/SignupRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/dto/response/EmployeePaymentResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/response/EmployeePaymentResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/dto/response/ResponseSecurityEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/response/ResponseSecurityEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/dto/response/SignupResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/response/SignupResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/model/EmployeePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/EmployeePayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/model/SecurityEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/SecurityEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/repository/EmployeePaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/repository/EmployeePaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/repository/SecurityEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/repository/SecurityEventRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/security/AuthenticationEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/AuthenticationEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/security/MethodSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/MethodSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/security/RestAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/security/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/security/WebSecurityConfigurerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/WebSecurityConfigurerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/security/constant/SecurityEventEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/constant/SecurityEventEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/security/constant/UserSecurityLogging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/constant/UserSecurityLogging.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/services/SecurityEventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/services/SecurityEventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/account/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/services/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/keystore/keystore.p12" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/keystore/keystore.p12" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2FEqFMNSd3xUwOeCkvLlaXiuXf3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/zarszz/Documents"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AccountServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AccountServiceTest" />
+      <module name="account" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="account" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="account" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AccountServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1af29d5-b57c-40d4-a8bf-e7b57d3a4fd5" name="Changes" comment="" />
+      <created>1664067492347</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664067492347</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
