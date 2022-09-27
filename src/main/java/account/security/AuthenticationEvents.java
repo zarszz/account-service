@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Objects;
 
 @Component
-//@Slf4j
 public class AuthenticationEvents {
     @Autowired
     private UserServices userService;
@@ -29,25 +28,19 @@ public class AuthenticationEvents {
 
     @EventListener
     public void handleAuthenticationFailure(AbstractAuthenticationFailureEvent failures) {
-        System.out.println("Event failed auth triggered");
         var principal = (String) failures.getAuthentication().getPrincipal();
         var user = userService.findByEmailIgnorecase(principal);
-        //log.warn("Account {} is trying to //logged in with wrong credentials", principal);
         if (user != null) {
             if (user.isAccountNonLocked()) {
                 if (user.getFailedAttempt() < UserServices.MAX_FAILED_ATTEMPTS) {
                     userService.increaseFailedAttempts(user, request.getRequestURI());
                 } else {
-//                    securityEventService.saveSecurityEvent(user.getEmail(), request.getRequestURI(), SecurityEventEnum.LOGIN_FAILED, request.getRequestURI());
                     throw new LockedException("User account is locked");
                 }
             } else if (!user.isAccountNonLocked()) {
                 if (userService.unlockWhenTimeExpired(user, request.getRequestURI())) {
-                    //log.warn("Account {} is unlocked after time limit", principal);
                     throw new LockedException("User account is locked");
                 } else {
-                    System.out.println("Account locked & Locked exception thrown");
-                    //log.warn("Account {} is accessed when locked", principal);
                     throw new LockedException("User account is locked");
                 }
             }
@@ -60,7 +53,6 @@ public class AuthenticationEvents {
 
     @EventListener
     public void handleAuthenticationSuccess(AuthenticationSuccessEvent success) {
-        System.out.println("Event success auth triggered");
         var principal = (UserDetailsImpl) success.getAuthentication().getPrincipal();
         var user = userService.findByEmailIgnorecase(principal.getUsername());
         if (user.getFailedAttempt() > 0) {

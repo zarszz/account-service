@@ -36,11 +36,7 @@ public class UserServices {
         if (newFailAttempts < 5) {
             user.setUserSecurityLogging(UserSecurityLogging.LOGIN_FAILED);
         }
-        System.out.println("Impostor : " + "maxmustermann@acme.com");
-        System.out.println("Current user: " + user.getEmail());
-        System.out.println("Current failed attempt: " + user.getFailedAttempt());
         if (newFailAttempts == 5) {
-            System.out.println("===> Continue in locking state");
             securityEventService.saveSecurityEvent(user.getEmail(), path, SecurityEventEnum.BRUTE_FORCE, path);
             var isAdmin = user.getRoles().stream().anyMatch(r -> r.getCode().equalsIgnoreCase("ADMINISTRATOR"));
             if (!isAdmin) {
@@ -50,7 +46,6 @@ public class UserServices {
         }
         user.setFailedAttempt(newFailAttempts);
         repo.save(user);
-//        repo.updateFailedAttempts(newFailAttempts, user.getEmail());
     }
 
     public void resetFailedAttempts(String email) {

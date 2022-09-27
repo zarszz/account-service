@@ -58,7 +58,6 @@ public class RoleController {
 		User persistedUser = new User();
 
 		if (dto.getOperation().equals("GRANT")) {
-			user.getRoles().forEach(r -> System.out.println(r.getCode()));
 			var isAdmin = user.getRoles().stream().anyMatch(r -> r.getCode().equals("ADMINISTRATOR"));
 			if (isAdmin && (role.equalsIgnoreCase("BUSINESS") || role.equalsIgnoreCase("AUDITOR") || role.equalsIgnoreCase("USER"))) {
 				return responseBadRequest("The user cannot combine administrative and business roles!", "/api/admin/user/role");

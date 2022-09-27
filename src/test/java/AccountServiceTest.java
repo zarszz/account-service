@@ -765,4 +765,5 @@ public class AccountServiceTest extends SpringTest {
           () -> testGetAdminApi(adminApi, 200, jDNewPass,
                   secondResponseAdminApi, "Api must be available to admin user")
   };
+
 }

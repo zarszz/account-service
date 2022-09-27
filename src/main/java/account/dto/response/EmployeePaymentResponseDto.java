@@ -2,11 +2,15 @@ package account.dto.response;
 
 import account.model.EmployeePayment;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.Month;
 import java.time.format.TextStyle;
 import java.util.Locale;
 
+@Getter
+@Setter
 public class EmployeePaymentResponseDto {
     private String name;
     private String lastname;
@@ -15,47 +19,7 @@ public class EmployeePaymentResponseDto {
     @JsonIgnore
     private Long salaryLong;
 
-    public String getSalary() {
-        return salary;
-    }
-
-    public void setSalary(String salary) {
-        this.salary = salary;
-    }
-
     private String salary;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPeriod() {
-        return period;
-    }
-
-    public void setPeriod(String period) {
-        this.period = period;
-    }
-
-    public Long getSalaryLong() {
-        return salaryLong;
-    }
-
-    public void setSalaryLong(Long salaryLong) {
-        this.salaryLong = salaryLong;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
 
     public static EmployeePaymentResponseDto fromRequest(EmployeePayment employeePayment) {
         var response = new EmployeePaymentResponseDto();

@@ -1,6 +1,8 @@
 package account.dto.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.validator.constraints.Range;
 
 import javax.validation.constraints.Digits;
@@ -8,6 +10,8 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Positive;
 
+@Getter
+@Setter
 public class EmployeePaymentsDto {
     private String employee;
 
@@ -17,28 +21,4 @@ public class EmployeePaymentsDto {
     @JsonProperty(value = "salary")
     @Range(min = 0l, message = "Please select positive numbers Only")
     private int salary;
-
-    public String getEmployee() {
-        return employee;
-    }
-
-    public void setEmployee(String employee) {
-        this.employee = employee;
-    }
-
-    public String getPeriod() {
-        return period;
-    }
-
-    public void setPeriod(String period) {
-        this.period = period;
-    }
-
-    public int getSalary() {
-        return salary;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
 }

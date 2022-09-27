@@ -70,7 +70,6 @@ class PayrollController {
 		@RequestBody @NotEmpty List<@Valid EmployeePaymentsDto> employeePaymentsDto,
 		Errors errors
 	) {
-		System.out.println(errors);
 		var employeePayments = new ArrayList<EmployeePayment>();
 
 		for (var dto: employeePaymentsDto) {
