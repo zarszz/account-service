@@ -6,26 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e1af29d5-b57c-40d4-a8bf-e7b57d3a4fd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/constant/BranchedPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/constant/BranchedPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/ItemsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/PayrollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/PayrollController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/exception/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/exception/ControllerExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/exception/ErrorResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangePasswordRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangePasswordRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/request/EmployeePaymentsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/EmployeePaymentsDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/request/SignupRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/SignupRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/response/ResponseSecurityEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/response/ResponseSecurityEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/response/SignupResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/response/SignupResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/AuthenticationEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/AuthenticationEvents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/RestAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/RestAuthenticationEntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/WebSecurityConfigurerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/WebSecurityConfigurerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/services/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/init_role.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init_role.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +22,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feat/implement-ci" />
+                    <option name="lastUsedInstant" value="1664600554" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1664600553" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -78,7 +84,11 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/zarszz/Documents&quot;
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zarszz/Documents&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.AccountServiceTest">
