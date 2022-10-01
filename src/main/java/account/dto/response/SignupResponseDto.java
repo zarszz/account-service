@@ -1,6 +1,5 @@
 package account.dto.response;
 
-import account.dto.request.SignupRequestDto;
 import account.model.Role;
 import account.model.User;
 import lombok.Getter;

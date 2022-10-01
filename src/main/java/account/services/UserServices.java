@@ -1,8 +1,6 @@
 package account.services;
 
-import account.model.SecurityEvent;
 import account.model.User;
-import account.repository.SecurityEventRepository;
 import account.repository.UserRepository;
 import account.security.constant.SecurityEventEnum;
 import account.security.constant.UserSecurityLogging;

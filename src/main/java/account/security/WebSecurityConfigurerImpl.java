@@ -1,11 +1,13 @@
 package account.security;
 
+import account.dto.response.ResponseErrorEntity;
 import account.security.constant.SecurityEventEnum;
 import account.services.SecurityEventService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -14,9 +16,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.access.AccessDeniedHandler;
 
 import javax.servlet.ServletOutputStream;
@@ -77,18 +77,17 @@ public class WebSecurityConfigurerImpl extends WebSecurityConfigurerAdapter {
 		return (request, response, ex) -> {
 			var principal = Objects.nonNull(request.getUserPrincipal()) ? request.getUserPrincipal().getName() : "Anonymous";
 			securityEventService.saveSecurityEvent(principal, request.getRequestURI(), SecurityEventEnum.ACCESS_DENIED, request.getRequestURI());
-			var responseTemplate = "{\n" +
-					"  \"timestamp\" : \"<date>\"," +
-					"  \"status\" : 403," +
-					"  \"error\" : \"Forbidden\"," +
-					"  \"message\" : \"Access Denied!\"," +
-					"  \"path\" : \"" + request.getRequestURI() + "\"\n" +
-					"}";
+			var responseErrorEntity = new ResponseErrorEntity<String>();
+			responseErrorEntity.setStatus(HttpStatus.FORBIDDEN.value());
+			responseErrorEntity.setError(HttpStatus.FORBIDDEN.getReasonPhrase());
+			responseErrorEntity.setMessage("Access Denied!");
+			responseErrorEntity.setPath(request.getRequestURI());
+
 			response.setStatus(HttpServletResponse.SC_FORBIDDEN);
 			response.setContentType(MediaType.APPLICATION_JSON_VALUE);
 
 			ServletOutputStream out = response.getOutputStream();
-			out.println(responseTemplate);
+			out.println(new ObjectMapper().writeValueAsString(responseErrorEntity));
 			out.flush();
 		};
 	}

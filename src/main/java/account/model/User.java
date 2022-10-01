@@ -2,7 +2,6 @@ package account.model;
 
 import account.dto.request.SignupRequestDto;
 import account.security.constant.UserSecurityLogging;
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

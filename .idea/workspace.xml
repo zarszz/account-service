@@ -6,28 +6,38 @@
   <component name="ChangeListManager">
     <list default="true" id="e1af29d5-b57c-40d4-a8bf-e7b57d3a4fd5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/constant/BranchedPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/constant/BranchedPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/ItemsController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/PayrollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/PayrollController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/TestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/exception/ControllerExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/controller/exception/ControllerExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/controller/exception/ErrorResponse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangePasswordRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangePasswordRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangeUserAccessRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangeUserAccessRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangeUserRoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/ChangeUserRoleDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/request/EmployeePaymentsDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/EmployeePaymentsDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/request/SignupRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/request/SignupRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/response/EmployeePaymentResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/response/EmployeePaymentResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/response/ResponseSecurityEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/response/ResponseSecurityEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/dto/response/SignupResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/dto/response/SignupResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/model/EmployeePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/EmployeePayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/model/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/account/model/SecurityEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/SecurityEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/security/AuthenticationEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/AuthenticationEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/RestAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/RestAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/account/security/WebSecurityConfigurerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/security/WebSecurityConfigurerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/account/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/account/services/UserServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/AccountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AccountServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +81,20 @@
     &quot;last_opened_file_path&quot;: &quot;/home/zarszz/Documents&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.AccountServiceTest">
+    <configuration name="AccountServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="account.AccountServiceApplication" />
+      <module name="account" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccountServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AccountServiceTest" />
       <module name="account" />
@@ -79,9 +102,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AccountServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.AccountServiceTest" />
+        <item itemvalue="Application.AccountServiceApplication" />
+        <item itemvalue="JUnit.AccountServiceTest" />
       </list>
     </recent_temporary>
   </component>
