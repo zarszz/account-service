@@ -27,7 +27,7 @@ public class AuthenticationEvents {
     @EventListener
     public void handleAuthenticationFailure(AbstractAuthenticationFailureEvent failures) {
         var principal = (String) failures.getAuthentication().getPrincipal();
-        var user = userService.findByEmailIgnorecase(principal);
+        var user = userService.findByEmailIgnoreCase(principal);
         if (Objects.isNull(user)) {
             var path = request.getRequestURI();
             securityEventService.saveSecurityEvent(principal, path, SecurityEventEnum.LOGIN_FAILED, path);
@@ -46,7 +46,7 @@ public class AuthenticationEvents {
     @EventListener
     public void handleAuthenticationSuccess(AuthenticationSuccessEvent success) {
         var principal = (UserDetailsImpl) success.getAuthentication().getPrincipal();
-        var user = userService.findByEmailIgnorecase(principal.getUsername());
+        var user = userService.findByEmailIgnoreCase(principal.getUsername());
         if (user.getFailedAttempt() > 0) {
             userService.resetFailedAttempts(user.getEmail());
         }
