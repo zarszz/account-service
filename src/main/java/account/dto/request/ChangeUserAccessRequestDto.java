@@ -1,5 +1,6 @@
 package account.dto.request;
 
+import account.constant.ChangeUserAccessOperation;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -7,5 +8,5 @@ import lombok.Setter;
 @Setter
 public class ChangeUserAccessRequestDto {
     private String user;
-    private String operation;
+    private ChangeUserAccessOperation operation;
 }

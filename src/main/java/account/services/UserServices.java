@@ -1,5 +1,6 @@
 package account.services;
 
+import account.dto.response.SignupResponseDto;
 import account.model.User;
 import account.repository.UserRepository;
 import account.security.constant.SecurityEventEnum;
@@ -8,7 +9,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.Comparator;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -24,7 +28,7 @@ public class UserServices {
     private SecurityEventService securityEventService;
     
 
-    public User findByEmailIgnorecase(String email) {
+    public User findByEmailIgnoreCase(String email) {
         return repo.findByEmailIgnoreCase(email).orElse(null);
     }
 
@@ -79,5 +83,14 @@ public class UserServices {
             return true;
         }
         return false;
+    }
+
+    public List<SignupResponseDto> findAll() {
+        return repo
+                .findAll()
+                .stream()
+                .sorted(Comparator.comparingLong(User::getId))
+                .map(SignupResponseDto::fromRequest)
+                .collect(Collectors.toList());
     }
 }
